@@ -51,6 +51,8 @@ fn main() {
             },
             _ => {
                 println!("Invalid option!");
+                println!("Press ENTER to try again...");
+                io::stdin().read_line(&mut String::new()).unwrap();
                 continue;
             },
         };
